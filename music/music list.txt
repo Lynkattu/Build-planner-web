@@ -1,0 +1,15 @@
+astelian:
+	https://www.youtube.com/watch?v=MaA0mLAFRSg
+egnesia:
+	https://www.youtube.com/watch?v=1Cc94Knv86w
+eldritch: 
+	https://www.youtube.com/watch?v=1W1uDR9EOx0
+imperial:
+	https://www.youtube.com/watch?v=LMHHS1nFDJI
+khazdan:
+	https://www.youtube.com/watch?v=ca-h-7VXLaw
+sanguine:
+	https://www.youtube.com/watch?v=UDW4BpiCVJE
+styria:
+sylvar:
+	https://www.youtube.com/watch?v=ifQ3JRS4gqc

@@ -1,0 +1,137 @@
+.attribute-button {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    margin: auto 3px;
+    border: 2px solid var(---medium);
+    background-color: var(---dark);
+
+    p {
+        margin: 0 0;
+        font-size: 26px;
+        display: block;
+        color: var(---text);
+        line-height: 10px;
+        bottom: -50%;
+    }
+}
+
+.attribute-button:hover{
+    color: var(---text-light);
+    background-color: var(---shade);
+    border-color: var(---medium-light);
+}
+
+.select-menu {
+    margin: auto 3px;
+    background-color: var(---dark);
+    border: 2px solid var(---medium);
+    color: var(---text);
+    width: 180px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+
+.attribute-box {
+    width: 50px;
+    height: 20px;
+    border: 2px solid var(---medium);
+    margin: auto 3px;
+    background-color: var(---shade);
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.remaining-attributes {
+    width: 100%;
+    font-size: 18px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.remaining-attributes > p{
+    display: inline;
+}
+
+#audio-player-container {
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin: auto 10px;
+    background-color: var(---shade);
+}
+#music-play-button{
+    height: 28px;
+    width: 70px;
+    background-color: rgba(#000, 0);
+    color: var(---text);
+    font-family: $font-Berkshire-Swash;
+    text-align: left;
+    padding: 0 5px;
+}
+#audio-player-container:hover{
+    background-color: var(---shade-light);
+    color: var(---text-light);
+}
+#audio-button-icon{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 2px;
+    top: 1px;
+}
+
+.collapsible{
+    display: block;
+    margin: 0;
+    padding: 0 5px;
+    width: 100%;
+    color: var(---text);
+    background-color: var(---shade);
+    border: 2px solid var(---medium);
+    text-align: left;
+    font-size: 18px;
+    &:hover{
+        background-color: var(---shade-light);
+        color: var(---text-light);
+    }
+}
+.collapsible-content{
+    padding: 5px;
+    display: none;
+    overflow: auto;
+    max-height: 70vh;
+    &::-webkit-scrollbar {
+        width: 8px;
+        background-color: var(---dark);
+      }
+       
+      &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      }
+       
+      &::-webkit-scrollbar-thumb {
+        background-color: var(---medium-light);
+        outline: 1px solid var(---medium);
+      }
+}
+
+.liBlock{
+    display: block;
+}
+
+.equipment{
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: 20px;
+    background-color: var(---shade);
+    color: var(---text);
+    font-size: 18px;
+    
+}
+.equipment:hover{
+    background-color: var(---shade-light);
+    color: var(---text-light);
+}

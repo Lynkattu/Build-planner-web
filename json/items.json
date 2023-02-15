@@ -1,0 +1,27 @@
+{
+    "body":[
+        {
+            "itemName": "Star Gazer's Robe",
+            "mainPropertiesCount": 4,
+            "secondaryPropertiesCount": 3,
+            "specialProperty": "",
+            "itemRaceCategory": "titan"
+        },
+        {
+            "itemName": "Unmaker's Breastplate",
+            "mainPropertiesCount": 3,
+            "secondaryPropertiesCount": 5,
+            "specialProperty": "",
+            "itemRaceCategory": "eldritch"
+        }
+    ],
+    "legs":[
+        {
+            "itemName": "Blood soaked loincloth",
+            "mainPropertiesCount": 3,
+            "secondaryPropertiesCount": 4,
+            "specialProperty": "",
+            "itemRaceCategory": "sanguine"
+        }
+    ]
+}

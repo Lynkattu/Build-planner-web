@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Planner</title>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Raleway:300,400,600,700|Berkshire Swash:400"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="">
+    <div class="topbar">
+        <ul class="topbar-nav"> 
+            <div id="audio-player-container">
+                <audio id="music-player" src="" preload=”metadata” loop></audio>
+                <button id="music-play-button"  id="audio-player-play">Play</button>
+                <img id="audio-button-icon" src="" alt="">
+            </div>
+            <li><a href="index.html">Attributes</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="traits.html">Traits</a></li>
+            <li><a href="items.html">Equipment</a></li>
+            <li><a href="stats.html">Stats</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="main-content-background"></div>
+
+        <div class="attributes-panel">
+            <ul class="attributes-panel-list">
+
+                <li>
+                    <select name="origin" id="origin-select" class="select-menu">
+                        <option value="astelian">Astelian Demi-titan</option>
+                        <option value="egnesian">Egnesian Half-dragon</option>
+                        <option value="eldritch">Eldritch Elf</option>
+                        <option value="imperial">Imperial Human</option>
+                        <option value="khazdan">Khazdan Dwarf</option>
+                        <option value="sanguine">Sanguine Vampire</option>
+                        <option value="styria">Styria Demon</option>
+                        <option value="sylvar">Sylvar Fae</option>
+                    </select>
+                    <p>Race</p>
+                </li>
+                <li>
+                    <select id="gender-select" class="select-menu">
+                        <option value="Female">Female</option>
+                        <option value="Male">Male</option>
+                    </select>
+                    <p>Gender</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-level-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-level-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="level-attribute"></div>
+                    <p>Level</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-strength-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-strength-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="strength-attribute">1</div>
+                    <p>Strength</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-dexterity-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-dexterity-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="dexterity-attribute">1</div>
+                    <p>Dexterity</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-intelligence-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-intelligence-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="intelligence-attribute">1</div>
+                    <p>Intelligence</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-constitution-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-constitution-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="constitution-attribute">1</div>
+                    <p>Constitution</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-willpower-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-willpower-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="willpower-attribute">1</div>
+                    <p>Willpower</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-endurance-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-endurance-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="endurance-attribute">1</div>
+                    <p>Endurance</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-agility-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-agility-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="agility-attribute">1</div>
+                    <p>Agility</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-charisma-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-charisma-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="charisma-attribute">1</div>
+                    <p>Charisma</p>
+                </li>
+                <li>
+                    <button class="attribute-button" id="increase-wisdom-button">
+                        <p>+</p>
+                    </button>
+                    <button class="attribute-button" id="decrease-wisdom-button">
+                        <p>-</p>
+                    </button>
+                    <div class="attribute-box" id="wisdom-attribute">1</div>
+                    <p>Wisdom</p>
+                </li>
+                <li>
+                    <div class="remaining-attributes">Remaining attributes: <p id="remaining-attributes"></p>
+                    </div>
+                </li>
+
+            </ul>
+        </div>
+        <div class="attributes-panel rightside">
+            <ul class="attributes-panel-list">
+                <li>
+                    <div class="attribute-box" id="health"></div>
+                    <p>Health</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="stamina"></div>
+                    <p>Stamina</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="focus"></div>
+                    <p>Focus</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="weight"></div>
+                    <p>Max Weight</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="staminaRecovery"></div>
+                    <p>Stamina Recovery</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="focusRecovery"></div>
+                    <p>Focus Recovery</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="mind"></div>
+                    <p>Mind</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="tenacity"></div>
+                    <p>Tenacity</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="physicalArmor"></div>
+                    <p>Physical Armor</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="spellArmor"></div>
+                    <p>Spell Armor</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="thoughness"></div>
+                    <p>Thoughness</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="resilence"></div>
+                    <p>Resilence</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="perserevance"></div>
+                    <p>Perserevance</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="precision"></div>
+                    <p>Precision</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="haste"></div>
+                    <p>Haste</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="concentration"></div>
+                    <p>Concentration</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="penetration"></div>
+                    <p>Penetration</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="alacricity"></div>
+                    <p>Alacricity</p>
+                </li>
+                <li>
+                    <div class="attribute-box" id="perspicacious"></div>
+                    <p>Perspicacious</p>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="./js/script.js" defer></script>
+    <script type="module" src="./js/attributes.js" defer></script>
+</body>
+
+</html>

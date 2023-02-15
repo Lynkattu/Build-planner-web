@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Planner</title>
+    <link href="https://fonts.googleapis.com/css?family=Marck+Script|Raleway:300,400,600,700|Berkshire Swash:400"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="">
+
+    <div class="topbar">
+        <ul class="topbar-nav"> 
+            <div id="audio-player-container">
+                <audio id="music-player" src="" preload=”metadata” loop></audio>
+                <button id="music-play-button"  id="audio-player-play">Play</button>
+                <img id="audio-button-icon" src="" alt="">
+            </div>
+            <li><a href="index.html">Attributes</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="traits.html">Traits</a></li>
+            <li><a href="items.html">Equipment</a></li>
+            <li><a href="stats.html">Stats</a></li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <div class="main-content-background"></div>
+
+        <div class="attributes-panel">
+            <ul class="attributes-panel-list">
+                <li>
+                    <select name="" id="itemslot-select" class="select-menu">
+                        <option value="body">Body</option>
+                        <option value="feet">Feet</option>
+                        <option value="finger-left">Finger left</option>
+                        <option value="finger-right">Finger right</option>
+                        <option value="hands">Hands</option>
+                        <option value="head">Head</option>
+                        <option value="legs">Legs</option>
+                        <option value="neck">Neck</option>
+                        <option value="arm-left">Weapon left</option>
+                        <option value="arm-right">Weapon right</option>
+                    </select>
+                    <p>Slot</p>
+                </li>
+                <li id="listBlock">
+                    <button class="collapsible">Armor list</button>
+                        <div class="collapsible-content"></div>
+                    
+                </li>
+            </ul>
+        </div>
+        
+        <div class="attributes-panel rightside">
+            <ul class="attributes-panel-list">
+                
+
+            </ul>
+        </div>
+    </div>
+
+    <script type="module" src="./js/script.js" defer></script>
+    <script type="module" src="./js/items.js" defer></script>
+
+</body>
+
+</html>

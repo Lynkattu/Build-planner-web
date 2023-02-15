@@ -1,0 +1,333 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  ---background-image: url(../../images/Astelian.png) no-repeat;
+}
+
+.eldritch-theme {
+  ---dark: #000011;
+  ---shade: #202030;
+  ---shade-light: #303040;
+  ---medium: #505070;
+  ---medium-light: #707070;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+.imperial-theme {
+  ---dark: #221000;
+  ---shade: #403000;
+  ---shade-light: #504000;
+  ---medium: #885010;
+  ---medium-light: #996010;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+.khazdan-theme {
+  ---dark: #000000;
+  ---shade: #303030;
+  ---shade-light: #404040;
+  ---medium: #505050;
+  ---medium-light: #707070;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+.sanguine-theme {
+  ---dark: #200000;
+  ---shade: #401010;
+  ---shade-light: #501515;
+  ---medium: #602525;
+  ---medium-light: #703030;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+.sylvar-theme {
+  ---dark: #001500;
+  ---shade: #203320;
+  ---shade-light: #204420;
+  ---medium: #355035;
+  ---medium-light: #406640;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+.styria-theme {
+  ---dark: #200020;
+  ---shade: #351535;
+  ---shade-light: #452545;
+  ---medium: #553355;
+  ---medium-light: #707070;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+.egnesian-theme {
+  ---dark: #001515;
+  ---shade: #004040;
+  ---shade-light: #006060;
+  ---medium: #008080;
+  ---medium-light: #707070;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+.astelian-theme {
+  ---dark: #100020;
+  ---shade: #250050;
+  ---shade-light: #350070;
+  ---medium: #400080;
+  ---medium-light: #707070;
+  ---text: #c0c0c0;
+  ---text-light: #e0e0e0;
+  ---text-primary: #e0e0e0;
+}
+
+body {
+  background-color: var(---dark);
+}
+
+.body {
+  overflow: hidden;
+}
+
+.topbar {
+  position: relative;
+  background-color: var(---medium);
+  height: 40px;
+  width: 100%;
+  border-bottom: 3px solid var(---shade);
+  border-top: 3px solid var(---shade);
+}
+.topbar-nav {
+  width: 600px;
+  height: 30px;
+  display: flex;
+  padding: 0 10px;
+  margin: 5px 0;
+}
+.topbar-nav li {
+  border: 2px solid var(---dark);
+  position: relative;
+  display: inline-block;
+  width: 100px;
+  margin: auto 10px;
+  list-style: none;
+}
+.topbar-nav li a {
+  font-size: 18px;
+  font-family: Berkshire Swash, "Times New Roman";
+  background-color: var(---shade);
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: var(---text);
+}
+.topbar-nav li a:hover {
+  color: var(---text-light);
+  background-color: var(---shade-light);
+}
+
+.main-content {
+  position: relative;
+  width: 100%;
+  height: 90vh;
+}
+.main-content-background {
+  position: absolute;
+  display: block;
+  margin: 10px 0;
+  z-index: -1;
+  max-width: 2000px;
+  max-height: 2000px;
+  width: 50%;
+  left: 25%;
+  height: 90vh;
+  background: var(---background-image);
+  background-size: cover;
+}
+
+.attributes-panel {
+  display: block;
+  width: 25%;
+  min-width: 280px;
+  max-width: 350px;
+  float: left;
+}
+.attributes-panel-list {
+  height: 100%;
+  margin: 10px;
+  border: 3px solid var(---shade);
+  background-color: var(---medium);
+  color: var(---text);
+  list-style: none;
+  font-size: 22px;
+  border-radius: 10px;
+}
+.attributes-panel-list li {
+  display: flex;
+  width: 250px;
+  margin: 10px auto;
+  background-color: var(---shade);
+  border: 2px solid var(---dark);
+  border-radius: 5px;
+}
+.attributes-panel-list li > p {
+  margin: auto 5px;
+}
+
+.rightside {
+  display: block;
+  float: right;
+}
+
+.attribute-button {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  margin: auto 3px;
+  border: 2px solid var(---medium);
+  background-color: var(---dark);
+}
+.attribute-button p {
+  margin: 0 0;
+  font-size: 26px;
+  display: block;
+  color: var(---text);
+  line-height: 10px;
+  bottom: -50%;
+}
+
+.attribute-button:hover {
+  color: var(---text-light);
+  background-color: var(---shade);
+  border-color: var(---medium-light);
+}
+
+.select-menu {
+  margin: auto 3px;
+  background-color: var(---dark);
+  border: 2px solid var(---medium);
+  color: var(---text);
+  width: 180px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+.attribute-box {
+  width: 50px;
+  height: 20px;
+  border: 2px solid var(---medium);
+  margin: auto 3px;
+  background-color: var(---shade);
+  font-size: 18px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.remaining-attributes {
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.remaining-attributes > p {
+  display: inline;
+}
+
+#audio-player-container {
+  position: relative;
+  display: flex;
+  text-align: center;
+  margin: auto 10px;
+  background-color: var(---shade);
+}
+
+#music-play-button {
+  height: 28px;
+  width: 70px;
+  background-color: rgba(0, 0, 0, 0);
+  color: var(---text);
+  font-family: Berkshire Swash, "Times New Roman";
+  text-align: left;
+  padding: 0 5px;
+}
+
+#audio-player-container:hover {
+  background-color: var(---shade-light);
+  color: var(---text-light);
+}
+
+#audio-button-icon {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: 2px;
+  top: 1px;
+}
+
+.collapsible {
+  display: block;
+  margin: 0;
+  padding: 0 5px;
+  width: 100%;
+  color: var(---text);
+  background-color: var(---shade);
+  border: 2px solid var(---medium);
+  text-align: left;
+  font-size: 18px;
+}
+.collapsible:hover {
+  background-color: var(---shade-light);
+  color: var(---text-light);
+}
+
+.collapsible-content {
+  padding: 5px;
+  display: none;
+  overflow: auto;
+  max-height: 70vh;
+}
+.collapsible-content::-webkit-scrollbar {
+  width: 8px;
+  background-color: var(---dark);
+}
+.collapsible-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+.collapsible-content::-webkit-scrollbar-thumb {
+  background-color: var(---medium-light);
+  outline: 1px solid var(---medium);
+}
+
+.liBlock {
+  display: block;
+}
+
+.equipment {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: 20px;
+  background-color: var(---shade);
+  color: var(---text);
+  font-size: 18px;
+}
+
+.equipment:hover {
+  background-color: var(---shade-light);
+  color: var(---text-light);
+}
